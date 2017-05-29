@@ -1,4 +1,4 @@
-var urll = encodeURIComponent("http://www.iesfbmoll.org/");
+var urll = encodeURIComponent("https://rawgit.com/borjadevelop/Articulos_Feministas.v2/Indent/index.html");
 var j = 0;
 var jsons = 1;
 var url = "https://rawgit.com/borjadevelop/Articulos_Feministas/Pruebas_Buenas/json/json";
@@ -34,7 +34,7 @@ $(document).ready(function() {
 
 
 
-    var title = "IES Francesc de Borja Moll";
+    var title = "Página de artículos feministas";
 
     $("#face").append($("<a>", {
         href: "https://www.facebook.com/share.php?u=" + urll,
@@ -42,15 +42,16 @@ $(document).ready(function() {
         id: "face1"
     }));
     $("#face1").append($('<img>', {
-        src: "img/ico_face.png"
+        src: "img/ico_face1.png"
     }));
 
     $("#twitter").append($("<a>", {
         href: "https://twitter.com/share?text=" + title + "&url=" + urll,
-        text: "enlace a twitter creado",
-        rel: "nofollow"
+        rel: "nofollow", id:"twitter1"
     }));
-
+    $("#twitter1").append($("<img>", {
+        src: "img/ico_face.png"
+    }));
 
 
 
